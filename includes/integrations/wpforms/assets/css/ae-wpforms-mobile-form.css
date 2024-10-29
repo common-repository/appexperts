@@ -1,0 +1,311 @@
+header,
+footer,
+widget,
+nav {
+  display: none;
+}
+
+:root {
+  --main-color: #ababab;
+  --secondary-color: #ef6c00;
+  --text-color: #000000;
+  --primary-btn-text-color: #ffffff;
+}
+
+.wpforms-form .wpforms-field-container,
+.wpforms-form .wpforms-submit-container {
+  margin: 0 5%;
+}
+
+.wpforms-form .wpforms-field {
+  max-width: 50%;
+}
+
+/* submit btn for form */
+div.wpforms-container-full .wpforms-form button[type="submit"] {
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  color: var(--primary-btn-text-color) !important;
+  background-color: var(--secondary-color) !important;
+}
+
+@media (max-width: 767px) {
+  .wpforms-form .wpforms-field {
+    max-width: 100%;
+  }
+
+  div.wpforms-container-full .wpforms-form button[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* form label */
+.wpforms-form .wpforms-field.text-val-empty input {
+  margin-top: 20px;
+}
+
+.wpforms-form .wpforms-field.text-val-empty label,
+.wpforms-form .wpforms-field .text-val-empty label {
+  /* .wpforms-form .wpforms-field.transition-text .wpforms-field-sublabel { */
+
+
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  font-size: 20px;
+  font-weight: normal;
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  transition: transform 0.2s ease-out, color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+
+.wpforms-form .wpforms-field.text-val-empty.transition-text label:not(.wpforms-error),
+.wpforms-form .wpforms-field.transition-text .text-val-empty input:focus+label:not(.wpforms-error) {
+  /* .wpforms-form .wpforms-field.transition-text .wpforms-field-sublabel { */
+  color: var(--secondary-color) !important;
+  transform: translateY(-30px) scale(0.8) !important;
+  font-weight: 700;
+  font-size: 18px !important;
+
+}
+
+.wpforms-form .wpforms-field .text-val-empty label {
+  bottom: 12px !important;
+  left: auto;
+  color: var(--text-color);
+}
+
+.wpforms-field-payment-single {
+  margin-top: 25px !important;
+}
+
+.wpforms-field-payment-single .wpforms-field-label {
+  margin-bottom: 25px !important;
+}
+
+
+/* 
+.wpforms-form .wpforms-field label.ae-has-value,
+.wpforms-form .wpforms-field.transition-text label{
+
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    font-weight: normal;
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    transition: transform 0.2s ease-out, color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+} */
+
+.wpforms-form .wpforms-field label.wpforms-field-label,
+.wpforms-field fieldset .wpforms-field-label,
+.wpforms-field fieldset .wpforms-field-medium>div label {
+  margin: 0;
+  font-size: 18px !important;
+  color: var(--text-color) !important;
+
+}
+
+/* .wpforms-form .wpforms-field label.ae-has-value:focus,
+.wpforms-field fieldset .ae-has-value:focus,
+.wpforms-field fieldset .wpforms-field-medium > div label.ae-has-value:focus,
+.wpforms-form .wpforms-field label.ae-has-value:active,
+.wpforms-field fieldset .ae-has-value:active,
+.wpforms-field fieldset .wpforms-field-medium > div label.ae-has-value:active {
+        color: var(--secondary-color);
+        transform: translateY(-30px) scale(0.8);
+} */
+
+
+.wpforms-form .wpforms-field label.wpforms-field-label span,
+.wpforms-container span.wpforms-required-label {
+  color: var(--secondary-color);
+  font-weight: 700 !important;
+}
+
+.wpforms-field fieldset .wpforms-field-medium {
+  border: 0 !important;
+  border-radius: 0;
+  max-width: 100% !important;
+}
+
+.wpforms-field fieldset .wpforms-field-medium>div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.wpforms-field fieldset .wpforms-field-medium>div input,
+.wpforms-field fieldset .wpforms-field-medium>div input .wpforms-field-required {
+  border: 0;
+  border-bottom: 1px solid var(--main-color);
+  border-radius: 0;
+  max-width: 100%;
+}
+
+.wpforms-field fieldset .wpforms-field-medium>div input:focus {
+  border: 0;
+  border-bottom: 1px solid var(--secondary-color);
+  box-shadow: unset;
+}
+
+/* error msg */
+
+.wpforms-form .wpforms-field em.wpforms-error,
+.wpforms-form .wpforms-field label.wpforms-error {
+  position: absolute !important;
+  bottom: -5px;
+  /* color: var(--secondary-color) !important; */
+}
+
+.wpforms-form .wpforms-field-name .wpforms-field-row.wpforms-field-medium>div {
+  position: relative;
+}
+
+.wpforms-form .wpforms-field-name .wpforms-field-row.wpforms-field-medium>div.text-val-empty {
+  margin-top: 15px;
+}
+
+.wpforms-form .wpforms-field-name em.wpforms-error {
+  bottom: -20px;
+
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field input.wpforms-error {
+  border: 0 !important;
+  box-shadow: unset !important;
+  border-bottom: 1px solid var(--main-color) !important;
+  border-radius: 0;
+}
+
+/* 
+div.wpforms-container-full .wpforms-form label.wpforms-error:before,
+div.wpforms-container-full .wpforms-form em.wpforms-error:before {
+  background-color: var(--secondary-color) !important;
+} */
+
+/* font input */
+.wpforms-form .wpforms-field .wpforms-field-medium:not(input[type="range"]) {
+  border: 0;
+  box-shadow: unset;
+  border-bottom: 1px solid var(--main-color);
+  border-radius: 0;
+  max-width: 100%;
+}
+
+.wpforms-form .wpforms-field .wpforms-field-medium:not(input[type="range"]):focus {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.wpforms-form .wpforms-field.transition-text .wpforms-field-label,
+.wpforms-form .wpforms-field.transition-text .wpforms-field-sublabel {
+  border: 0;
+  /* color: var(--secondary-color); */
+  box-shadow: unset;
+  transition: .3s;
+}
+
+.wpforms-form .wpforms-field input[type="range"].wpforms-field-medium {
+  max-width: 100%;
+  color: var(--main-color);
+  border: 1px solid;
+  box-shadow: unset;
+}
+
+/* range styles */
+
+input[type="range"]::-webkit-slider-thumb {
+  background: var(--main-color) !important;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: var(--main-color) !important;
+}
+
+input[type="range"]::-ms-thumb {
+  background: var(--main-color) !important;
+}
+
+/* radio settings */
+
+div.wpforms-container-full input[type="checkbox"]:checked:after {
+  border-color: var(--secondary-color) !important;
+}
+
+div.wpforms-container-full input[type="radio"]:checked:after {
+  background-color: var(--secondary-color) !important;
+}
+
+div.wpforms-container-full input[type="checkbox"]:before {
+  border-radius: 1px !important;
+}
+
+div.wpforms-container-full input[type="checkbox"]:checked:before,
+div.wpforms-container-full input[type="radio"]:checked:before {
+  border-color: var(--secondary-color) !important;
+  box-shadow: 0 0 0 1px var(--secondary-color), 0px 1px 2px rgba(0, 0, 0, 0.15) !important;
+}
+
+div.wpforms-container-full input[type="checkbox"]:before,
+div.wpforms-container-full input[type="radio"]:before {
+  border-color: var(--main-color) !important;
+  box-shadow: 0 0 0 1px var(--main-color), 0px 1px 2px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* credit card section */
+.wpforms-form .wpforms-field-stripe-credit-card {
+  border: none;
+  background: rgba(204, 204, 204, 0.2);
+  padding: 30px !important;
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+.wpforms-form .wpforms-field-stripe-credit-card .wpforms-field-medium {
+  border: 0 !important;
+}
+
+.wpforms-form .wpforms-field-stripe-credit-card label.wpforms-field-label {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.wpforms-form .wpforms-field-container .wpforms-field-payment-total label,
+.wpforms-form .wpforms-field-container .wpforms-field-payment-total .wpforms-payment-total {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* lang footer */
+.wpml-ls-statics-footer {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.wpml-ls-statics-footer>ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 5% 0 !important;
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+  margin: 0 -10px !important;
+}
+
+
+/* drop down */
+
+div.wpforms-container-full select>option:not(.placeholder):checked,
+div.wpforms-container-full select>option:hover {
+  color: var(--primary-btn-text-color) !important;
+  background-color: var(--secondary-color) !important;
+
+}
+
+option:nth-child(1):hover,
+option:nth-child(2):hover,
+option:nth-child(3):hover {
+  background-color: var(--secondary-color) !important;
+
+}

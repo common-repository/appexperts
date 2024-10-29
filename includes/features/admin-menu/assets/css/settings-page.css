@@ -1,0 +1,9 @@
+.status-connected {
+    color: #155724;
+}
+.connected-icon {
+    padding: 2px 5px;
+    background: #9fd8ac;
+    border-radius: 50%;
+    font-size: 15px;
+}

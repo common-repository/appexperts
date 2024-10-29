@@ -1,0 +1,10 @@
+.ae_manual_push_container { margin:0 15px;}
+.ae_manual_push .width-100 {width: 60%;}
+.ae_manual_push .select2-container{width: 60%;padding: 5px 0}
+.ae_manual_push .select2-choices{border-radius: 5px;}
+.ae_manual_push img{width: 25vw;}
+.ae_manual_push .tab-content{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}

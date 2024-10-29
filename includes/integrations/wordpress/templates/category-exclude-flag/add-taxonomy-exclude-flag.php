@@ -1,0 +1,2 @@
+<input type="checkbox" id="ae_taxonomy_exclude_flag" name="<?php echo App_Expert_Taxonomy_Exclude_Helper::$taxonomy_exclude_flag?>" value="true">
+<label style="display: inline-block;" for="ae_taxonomy_exclude_flag"><?php _e('Exclude from AppExperts', 'app-expert') ?></label>
